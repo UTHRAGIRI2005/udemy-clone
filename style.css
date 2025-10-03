@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Gabarito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* Navbar section */
+.navbar {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: solid 1px black;
+    gap: 10px;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.navbar__s1__title {
+    color: #A435F0;
+}
+
+.navbar__s2 {
+    width: 60%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navbar__s2 input {
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    background-color: transparent;
+
+}
+
+.navbar__s2 input:focus {
+    outline: none;
+}
+
+.navbar__s3 {
+    display: flex;
+    gap: 20px;
+
+}
+
+.navbar__s3 p,
+i {
+    cursor: pointer;
+}
+
+.popupbox {
+    background-color: white;
+    padding: 20px;
+    width: 100px;
+    height: fit-content;
+    border: solid black 1px;
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    display: none;
+    position: absolute;
+    top: 0px;
+
+}
+
+
+.my-learn {
+    position: relative;
+}
+
+.my-learn:hover .popupbox {
+    display: block;
+
+}
+
+.sale-image__offer-box {
+    animation-name: zoom;
+    animation-duration: 5s;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(-1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+
+}
+
+
+
+.course-card img:hover {
+    transform: translateY(-10px);
+    transition-duration: 1s;
+}
+
+
+.course {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-bottom: solid black 1px;
+    padding: 10px;
+}
+
+.course p {
+    background-color: #A435F0;
+    color: white;
+    border: solid 1px #A435F0;
+    padding: 10px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 2px;
+}
+
+.course p:hover {
+    background-color: white;
+    color: black;
+    transition: 2s;
+}
+
+.sale-image {
+    position: relative;
+    width: fit-content;
+}
+
+.sale-image img {
+    width: 100%;
+}
+
+.sale-image__offer-box {
+    background-color: white;
+    padding: 30px;
+    width: 25%;
+    position: absolute;
+    top: 35%;
+    left: 80px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.recommend {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.recommend__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px;
+
+
+}
+
+.course-card {
+    width: 200px;
+    flex-grow: 1;
+
+}
+
+.course-card img {
+    width: 100%;
+    height: 60%;
+
+
+}
+
+.topics {
+    margin: 10px;
+
+}
+
+.topics__recommend {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+
+}
+
+.topics__recommend p {
+    background-color: white;
+    color: black;
+    border: 2px solid grey;
+    flex-grow: 1;
+    flex-basis: 25%;
+    padding: 10px;
+}
+
+/* most popular */
+.most-popular__container__card img:hover {
+    transform: translateY(-10px);
+    transition-duration: 1s;
+}
+
+.most-popular {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.most-popular__container {
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 20px; */
+
+
+
+
+}
+
+.most-popular__container__card {
+    width: 200px;
+    flex-grow: 1;
+
+}
+
+.most-popular__container__card img {
+    width: 100%;
+    height: 60%;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.menu-list {
+    display: flex;
+    gap: 50px;
+}
+
+.menu-list p {
+    margin: 20px;
+}
+
+.footer__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width:600px) {
+   .navbar__s3,.navbar__s2, .sale-image__offer-box{
+        display: none;
+    }
+    body{
+        font-size: 10px;
+    }
+   
+    
+}
+@media screen and (min-width:600px) {
+    #menu{
+        display: none;
+    }
+    
+}
